@@ -51,6 +51,7 @@ class TablesController < ApplicationController
       {
         id: 1,
         name: 'access',
+        nullable_w_manual_type: nil,
         description: 'logs',
         database: {
           id: 2,
@@ -65,6 +66,7 @@ class TablesController < ApplicationController
       {
         id: 42,
         name: 'access',
+        nullable_w_manual_type: nil,
         description: 'logs',
         database: {
           id: 4242,

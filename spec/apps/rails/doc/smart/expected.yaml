@@ -78,6 +78,7 @@ paths:
               example:
               - id: 42
                 name: access
+                nullable_w_manual_type:
                 description: logs
                 database:
                   id: 4242
@@ -188,6 +189,7 @@ paths:
                 required:
                   - id
                   - name
+                  - nullable_w_manual_type
                   - description
                   - database
                   - null_sample
@@ -197,6 +199,7 @@ paths:
               example:
                 id: 1
                 name: access
+                nullable_w_manual_type:
                 description: logs
                 database:
                   id: 2
@@ -298,6 +301,9 @@ components:
           type: integer
         name:
           type: string
+        nullable_w_manual_type:
+          nullable: true
+          type: string
         description:
           type: string
         database:
@@ -318,6 +324,7 @@ components:
       required:
         - id
         - name
+        - nullable_w_manual_type
         - description
         - database
         - columns

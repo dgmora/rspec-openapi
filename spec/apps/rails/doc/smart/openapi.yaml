@@ -219,6 +219,7 @@ paths:
               example:
                 id: 1
                 name: access
+                nullable_w_manual_type:
                 description: logs
                 no_such_field_response: true
                 database:
@@ -266,6 +267,9 @@ components:
         # This field should exists in expected
         # name:
         #  type: string
+        nullable_w_manual_type:
+          nullable: true
+          type: string
         this_field_should_not_exist_in_expected:
           type: string
         description:
